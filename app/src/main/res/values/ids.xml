@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnSecondScreen" type="id" />
+    <item name="loginButton" type="id" />
+    <item name="passwordInput" type="id" />
+    <item name="emailInput" type="id" />
+</resources>

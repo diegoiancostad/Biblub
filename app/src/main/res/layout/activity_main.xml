@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintOverlap" />
+
+    <RelativeLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <!-- Imagem de fundo -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        android:contentDescription="@string/fundo" />
+
+    <!-- Conteúdo sobreposto -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp"> <!-- Fundo preto translúcido -->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BIBLUB"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteY="323dp" />
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="assista e organize seus filmes com o biblub"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteY="373dp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/escolha_uma_das_op_es_abaixo_para_continuar"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#6D7F9E"
+            android:text="@string/entrar_no_app"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints,VisualLintButtonSize"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="448dp" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/cadastrar_no_app"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints,VisualLintButtonSize"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="498dp" />
+
+        <!-- Texto "ou continue com" -->
+        <TextView
+            android:id="@+id/orText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ou_continue_com"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="579dp" />
+
+        <ImageButton
+            android:id="@+id/imageGoogleLogin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/google_login"
+            android:src="@drawable/ic_google"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="169dp"
+            tools:layout_editor_absoluteY="609dp" />
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

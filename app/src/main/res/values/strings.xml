@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AppBiblub</string>
+    <string name="escolha_uma_das_op_es_abaixo_para_continuar">escolha uma das op es abaixo para continuar</string>
+    <string name="entrar_no_app">Entrar</string>
+    <string name="cadastrar_no_app">cadastrar</string>
+    <string name="ou_continue_com">ou continue com</string>
+    <string name="google_login">google_login</string>
+    <string name="fundo">fundo_main</string>
+    <string name="cadastro">cadastro</string>
+    <string name="e_mail_registrado">email registrado</string>
+    <string name="senha_registrada">senha registrada</string>
+    <string name="Cadastrar">Cadastrar</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="bem_vindo_segunda_tela">Bem-vindo à Segunda Tela</string>
+    <string name="title_activity_segunda_tela">SegundaTelaActivity</string>
+    <string name="entrar">entrar</string>
+    <string name="senha">Senha</string>
+    <string name="e_mail">Email</string>
+    <string name="login">Login</string>
+</resources>
