@@ -13,10 +13,13 @@
         android:theme="@style/Theme.AppBiblub"
         tools:targetApi="31">
         <activity
-            android:name=".SegundaTelaActivity"
+            android:name=".CadastroActivity"
             android:exported="false"
-            android:label="@string/title_activity_segunda_tela"
+            android:label="@string/title_activity_cadastro"
             android:theme="@style/Theme.AppBiblub" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity2"
             android:exported="false"

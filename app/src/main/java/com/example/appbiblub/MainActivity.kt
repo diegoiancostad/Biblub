@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import kotlin.jvm.java
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,11 +20,19 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // 👉 Código para abrir a segunda tela ao clicar no botão
+        // Botão de login
         val loginButton = findViewById<Button>(R.id.btnEntrar)
         loginButton.setOnClickListener {
-            val intent = Intent(this, SegundaTelaActivity::class.java)
+            val intent = Intent(this@MainActivity, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Botão de cadastro
+        val cadastroButton = findViewById<Button>(R.id.btnCadastrar)
+        cadastroButton.setOnClickListener {
+            val intent = Intent(this@MainActivity, CadastroActivity::class.java)
             startActivity(intent)
         }
     }
 }
+

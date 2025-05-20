@@ -17,4 +17,14 @@
     <string name="senha">Senha</string>
     <string name="e_mail">Email</string>
     <string name="login">Login</string>
+    <string name="title_activity_cadastro">CadastroActivity</string>
+    <string name="biblub">BIBLUB</string>
+    <string name="nome_e_sobrenome">Nome e Sobrenome</string>
+    <string name="bem_vindo_ao_biblub">Bem-vindo ao Biblub</string>
+    <string name="preencha_as_informa_es_abaixo_para_continuar">Preencha as informações abaixo para continuar</string>
+    <string name="e_mail_para_cadastro">E-MAIL</string>
+    <string name="confirmar_e_mail">Confirmar e-mail</string>
+    <string name="senha_para_cadastro">SENHA</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="avançar">Avançar</string>
 </resources>
