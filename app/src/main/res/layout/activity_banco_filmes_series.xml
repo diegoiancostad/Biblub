@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nome_do_filme_s_rie"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <EditText
+            android:id="@+id/etCartaz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/url_da_imagem_do_cartaz"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <EditText
+            android:id="@+id/etStreaming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/link_do_streaming"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:text="@string/salvar_filme_s_rie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:text="@string/filmes_s_ries_cadastrados"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/layoutLista"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
